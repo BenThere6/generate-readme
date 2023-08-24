@@ -12,17 +12,20 @@ inquirer
         {
             type: 'input',
             name: 'description',
-            message: "Enter a description:"
+            message: "Enter a description:",
+            default: "Description pending"
         },
         {
             type: 'input',
             name: 'installation',
-            message: "What are the instructions for installation?"
+            message: "What are the instructions for installation?",
+            default: "Instructions pending"
         },
         {
             type: 'input',
             name: 'usage',
-            message: "What are the instructions for use?"
+            message: "What are the instructions for use?",
+            default: "Instructions pending"
         },
         {
             type: 'list',
@@ -41,7 +44,8 @@ inquirer
                 'Eclipse Public License',
                 'ISC License',
                 'GNU Affero General Public License'
-            ]
+            ],
+            default: "MIT License"
         }
     ]) 
     .then(answers => {

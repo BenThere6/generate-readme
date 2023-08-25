@@ -60,6 +60,25 @@ ${data.installation}
 ${data.usage}
 
 
+## Contributing
+
+${data.contributing}
+
+
+## Tests
+
+${data.tests}
+
+
+## Contact Information
+
+For any further inquiries, please feel free to reach out to me through the following channels:
+- GitHub: [My GitHub Profile](https://www.github.com/${data.github})
+- Email: ${data.email}
+
+I am here to assist you with any questions or feedback you may have. Thank you for your interest!
+
+
 ## Credits
 
 ${data.credits}

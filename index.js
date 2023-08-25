@@ -28,6 +28,12 @@ inquirer
             default: "Instructions pending"
         },
         {
+            type: 'input',
+            name: 'credits',
+            message: 'Enter credits:',
+            default: "Credits pending"
+        },
+        {
             type: 'list',
             name: 'license',
             message: "Select a license:",
@@ -42,7 +48,7 @@ inquirer
                 'ISC License',
                 'GNU Affero General Public License'
             ],
-            default: "MIT License"
+            // default: "MIT License"
         }
     ]) 
     .then(answers => {

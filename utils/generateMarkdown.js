@@ -1,5 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   var badge = '';
   if (license) {
@@ -8,8 +6,6 @@ function renderLicenseBadge(license) {
   return badge;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
   var link = '';
   if (license) {
@@ -18,8 +14,6 @@ function renderLicenseLink(license) {
   return link;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   var summary = '';
   if (license) {
@@ -28,11 +22,46 @@ function renderLicenseSection(license) {
   return summary;
 }
 
-// TODO: Create a function to generate markdown for README
+function renderInstallation(installation) {
+  var install = '';
+  if (installation) {
+    install = `\n## Installation\n\n${installation}\n`
+  }
+  return install
+}
+
+function renderContributing(contribute) {
+  var contributing = '';
+  if (contribute) {
+    contributing = `\n## Contributing\n\n${contribute}\n`
+  }
+  return contributing
+}
+
+function renderTests(test) {
+  var tests = '';
+  if (test) {
+    tests = `\n## Tests\n\n${test}\n`
+  }
+  return tests
+}
+
+function renderCredits(credit) {
+  var credits = '';
+  if (credit) {
+    credits = `\n## Credits\n\n${credit}\n`
+  }
+  return credits
+}
+
 function generateMarkdown(data) {
   var badge = renderLicenseBadge(data.license)
   var link = renderLicenseLink(data.license)
   var summary = renderLicenseSection(data.license)
+  var installation = renderInstallation(data.installation)
+  var contributing = renderContributing(data.contributing)
+  var tests = renderTests(data.tests)
+  var credits = renderCredits(data.credits)
 
   return `${badge}
 
@@ -49,46 +78,22 @@ function generateMarkdown(data) {
 * [Credits](#credits)<br>
 * [License](#license)
 
-
 ## Description
   
 ${data.description}
-
-
-## Installation
-
-${data.installation}
-
-
+${installation}
 ## Usage 
 
 ${data.usage}
-
-
-## Contributing
-
-${data.contributing}
-
-
-## Tests
-
-${data.tests}
-
-
+${contributing}${tests}
 ## Contact Information
 
 For any further inquiries, please feel free to reach out to me through the following channels:
-- GitHub: [My GitHub Profile](https://www.github.com/${data.github})
-- Email: ${data.email}
+* GitHub: [My GitHub Profile](https://www.github.com/${data.github})
+* Email: ${data.email}
 
 I am here to assist you with any questions or feedback you may have. Thank you for your interest!
-
-
-## Credits
-
-${data.credits}
-
-
+${credits}
 ## License 
 
 [${data.license}](${link})

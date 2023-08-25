@@ -54,6 +54,26 @@ function renderCredits(credit) {
   return credits
 }
 
+function renderTableOfContents(data) {
+  installation = ''
+  if (data.installation) {
+    installation = '\n* [Installation](#installation)<br>'
+  }
+  contributing = ''
+  if (data.contributing) {
+    contributing = '\n* [Contributing](#contributing)<br>'
+  }
+  tests = ''
+  if (data.tests) {
+    tests = '\n* [Tests](#tests)<br>'
+  }
+  credits = ''
+  if (data.credits) {
+    credits = '\n* [Credits](#credits)<br>'
+  }
+  return [installation, contributing, tests, credits]
+}
+
 function generateMarkdown(data) {
   var badge = renderLicenseBadge(data.license)
   var link = renderLicenseLink(data.license)
@@ -62,6 +82,7 @@ function generateMarkdown(data) {
   var contributing = renderContributing(data.contributing)
   var tests = renderTests(data.tests)
   var credits = renderCredits(data.credits)
+  var tableLinks = renderTableOfContents(data)
 
   return `${badge}
 
@@ -69,13 +90,9 @@ function generateMarkdown(data) {
   
 ## Table of Contents
 
-* [Description](#description)<br>
-* [Installation](#installation)<br>
-* [Usage](#usage)<br>
-* [Contributing](#contributing)<br>
-* [Tests](#tests)<br>
-* [Contact Information](#contact-information)<br>
-* [Credits](#credits)<br>
+* [Description](#description)<br>${tableLinks[0]}
+* [Usage](#usage)<br>${tableLinks[1]}${tableLinks[2]}
+* [Contact Information](#contact-information)<br>${tableLinks[3]}
 * [License](#license)
 
 ## Description

@@ -3,13 +3,13 @@
 # README Generator 
   
 Table of Contents
--[Description](#description)
--[Installation](#installation)
--[Usage](#usage)
--[Contributing](#contributing)
--[Tests](#tests)
--[Contact Information](#contact-information)
--[Credits](#credits)
+-[Description](#description)<br>
+-[Installation](#installation)<br>
+-[Usage](#usage)<br>
+-[Contributing](#contributing)<br>
+-[Tests](#tests)<br>
+-[Contact Information](#contact-information)<br>
+-[Credits](#credits)<br>
 -[License](#license)
 
 
@@ -20,22 +20,12 @@ This script will generate a README file for you! Just follow the simple prompts,
 
 ## Installation
 
-Tbh I'm not sure what to put here. There is a package.json file with the dependencies to install. In the terminal enter 'npm i' and everything you  need  will be installed.
+In the terminal enter 'npm i' and everything you need will be installed.
 
 
 ## Usage 
 
 After installing the packages, run 'node index' in your terminal, then follow the prompts.
-
-
-## Contributing
-
-Contributions welcome!
-
-
-## Tests
-
-I have not written any tests.
 
 
 ## Contact Information
@@ -45,11 +35,6 @@ For any further inquiries, please feel free to reach out to me through the follo
 - Email: benjaminbirdsall@icloud.com
 
 I am here to assist you with any questions or feedback you may have. Thank you for your interest!
-
-
-## Credits
-
-No credits, bruh.
 
 
 ## License 

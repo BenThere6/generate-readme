@@ -2,7 +2,7 @@
 
 # README Generator 
   
-Table of Contents
+Table of Contents<br>
 -[Description](#description)<br>
 -[Installation](#installation)<br>
 -[Usage](#usage)<br>

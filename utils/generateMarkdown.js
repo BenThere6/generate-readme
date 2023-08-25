@@ -40,14 +40,14 @@ function generateMarkdown(data) {
   
 ## Table of Contents
 
--[Description](#description)<br>
--[Installation](#installation)<br>
--[Usage](#usage)<br>
--[Contributing](#contributing)<br>
--[Tests](#tests)<br>
--[Contact Information](#contact-information)<br>
--[Credits](#credits)<br>
--[License](#license)
+*[Description](#description)<br>
+*[Installation](#installation)<br>
+*[Usage](#usage)<br>
+*[Contributing](#contributing)<br>
+*[Tests](#tests)<br>
+*[Contact Information](#contact-information)<br>
+*[Credits](#credits)<br>
+*[License](#license)
 
 
 ## Description

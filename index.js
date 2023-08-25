@@ -30,6 +30,30 @@ inquirer
         },
         {
             type: 'input',
+            name: 'contributing',
+            message: "What are the instructions for contributing?",
+            default: "Instructions pending"
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: "How do users test this?",
+            default: "Tests pending"
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: "Enter your GitHub username:",
+            default: "BenThere6"
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: "Enter your email:",
+            default: "benjaminbirdsall@icloud.com"
+        },
+        {
+            type: 'input',
             name: 'credits',
             message: 'Enter credits:',
             default: "Credits pending"

@@ -34,7 +34,9 @@ function generateMarkdown(data) {
   var link = renderLicenseLink(data.license)
   var summary = renderLicenseSection(data.license)
 
-  return `# ${data.title} ${badge}
+  return `${badge}
+
+# ${data.title} 
   
 ## Description
   
@@ -58,9 +60,7 @@ ${data.credits}
 
 ## License 
 
-${data.license}
-
-${link}
+[${data.license}](${link})
 
 ${summary}
 `;
@@ -79,15 +79,15 @@ const badges = {
 }
 
 const links = {
-  'MIT License':'[License Link](https://opensource.org/licenses/MIT)',
-  'GNU General Public License v2':'[License Link](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)',
-  'GNU General Public License v3':'[License Link](https://www.gnu.org/licenses/gpl-3.0.en.html)',
-  'Apache License 2.0':'[License Link](https://www.apache.org/licenses/LICENSE-2.0)',
-  '3-Clause BSD License':'[License Link](https://opensource.org/licenses/BSD-3-Clause)',
-  '2-Clause BSD License':'[License Link](https://opensource.org/licenses/BSD-2-Clause)',
-  'Mozilla Public License 2.0':'[License Link](https://www.mozilla.org/en-US/MPL/2.0/)',
-  'ISC License':'[License Link](https://opensource.org/licenses/ISC)',
-  'GNU Affero General Public License':'[License Link](https://www.gnu.org/licenses/agpl-3.0.en.html)'
+  'MIT License':'https://opensource.org/licenses/MIT',
+  'GNU General Public License v2':'https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html',
+  'GNU General Public License v3':'https://www.gnu.org/licenses/gpl-3.0.en.html',
+  'Apache License 2.0':'https://www.apache.org/licenses/LICENSE-2.0',
+  '3-Clause BSD License':'https://opensource.org/licenses/BSD-3-Clause',
+  '2-Clause BSD License':'https://opensource.org/licenses/BSD-2-Clause',
+  'Mozilla Public License 2.0':'https://www.mozilla.org/en-US/MPL/2.0/',
+  'ISC License':'https://opensource.org/licenses/ISC',
+  'GNU Affero General Public License':'https://www.gnu.org/licenses/agpl-3.0.en.html'
 }
 
 const summaries = {

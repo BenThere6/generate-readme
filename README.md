@@ -13,7 +13,7 @@
 
 ## Description
   
-This script will generate a README file for you! Just follow the simple prompts, and your new README will be saved to your directory.
+This script will generate a README.md file with the title and sections entitled Table of Contents, Description, Installation, Usage, Contributing, Tests, Contact Information, Credits, and License. Just follow the simple prompts, and your new README will be saved to your directory.
 
 
 ## Installation

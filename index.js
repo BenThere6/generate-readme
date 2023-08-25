@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 inquirer
     .prompt([
@@ -48,10 +49,17 @@ inquirer
                 'ISC License',
                 'GNU Affero General Public License'
             ],
-            // default: "MIT License"
         }
     ]) 
     .then(answers => {
-        // console.log(answers)
         const markdown = generateMarkdown.generateMarkdown(answers);
+
+        fs.writeFile('README.md', markdown, (err) => {
+            if (err) {
+                console.error('Error writing to file:', err);
+            } else {
+                console.log('File write operation complete.');
+            }
+            });
     })
+

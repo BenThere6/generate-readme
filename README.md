@@ -25,6 +25,8 @@ In the terminal enter 'npm i' and everything you need will be installed.
 
 After installing the packages, run 'node index' in your terminal, then follow the prompts.
 
+![Screenshot]()
+
 
 ## Contact Information
 

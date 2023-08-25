@@ -8,37 +8,50 @@ inquirer
         {
             type: 'input',
             name: 'title',
-            message: "What is the title of your application?"
+            message: "What is the title of your application?",
+            validate: function(input) {
+                if (input.trim() === '') {
+                  return "Title is required.";
+                }
+                return true;
+              }
         },
         {
             type: 'input',
             name: 'description',
             message: "Enter a description:",
-            default: "Description pending"
+            validate: function(input) {
+                if (input.trim() === '') {
+                  return "Description is required.";
+                }
+                return true;
+              }
         },
         {
             type: 'input',
             name: 'installation',
             message: "What are the instructions for installation?",
-            default: "Instructions pending"
         },
         {
             type: 'input',
             name: 'usage',
             message: "What are the instructions for use?",
-            default: "Instructions pending"
+            validate: function(input) {
+                if (input.trim() === '') {
+                  return "Usage instructions are required.";
+                }
+                return true;
+              }
         },
         {
             type: 'input',
             name: 'contributing',
             message: "What are the instructions for contributing?",
-            default: "Instructions pending"
         },
         {
             type: 'input',
             name: 'tests',
             message: "How do users test this?",
-            default: "Tests pending"
         },
         {
             type: 'input',
@@ -56,7 +69,6 @@ inquirer
             type: 'input',
             name: 'credits',
             message: 'Enter credits:',
-            default: "Credits pending"
         },
         {
             type: 'list',

@@ -33,8 +33,36 @@ function generateMarkdown(data) {
   var badge = renderLicenseBadge(data.license)
   var link = renderLicenseLink(data.license)
   var summary = renderLicenseSection(data.license)
-  return `# ${data.title}
 
+  return `# ${data.title} ${badge}
+  
+## Description
+  
+${data.description}
+
+
+## Installation
+
+${data.installation}
+
+
+## Usage 
+
+${data.usage}
+
+
+## Credits
+
+${data.credits}
+
+
+## License 
+
+${data.license}
+
+${link}
+
+${summary}
 `;
 }
 

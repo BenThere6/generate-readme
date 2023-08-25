@@ -42,6 +42,9 @@ Table of Contents
 -[Description](#description)
 -[Installation](#installation)
 -[Usage](#usage)
+-[Contributing](#contributing)
+-[Tests](#tests)
+-[Contact Information](#contact-information)
 -[Credits](#credits)
 -[License](#license)
 

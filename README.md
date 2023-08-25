@@ -4,11 +4,11 @@
   
 ## Table of Contents
 
-*[Description](#description)<br>
-*[Installation](#installation)<br>
-*[Usage](#usage)<br>
-*[Contact Information](#contact-information)<br>
-*[License](#license)
+* [Description](#description)<br>
+* [Installation](#installation)<br>
+* [Usage](#usage)<br>
+* [Contact Information](#contact-information)<br>
+* [License](#license)
 
 
 ## Description

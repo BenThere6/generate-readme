@@ -38,10 +38,7 @@ inquirer
                 'Apache License 2.0',
                 '3-Clause BSD License',
                 '2-Clause BSD License',
-                'Creative Commons License',
                 'Mozilla Public License 2.0',
-                'Unlicense',
-                'Eclipse Public License',
                 'ISC License',
                 'GNU Affero General Public License'
             ],
@@ -49,7 +46,6 @@ inquirer
         }
     ]) 
     .then(answers => {
-        console.log(answers)
+        // console.log(answers)
+        const markdown = generateMarkdown.generateMarkdown(answers);
     })
-
-const markdown = generateMarkdown.generateMarkdown(data);

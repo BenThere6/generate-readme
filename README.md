@@ -31,8 +31,8 @@ Upon successfully installing the packages, execute the command 'node index' with
 ## Contact Information
 
 For any further inquiries, please feel free to reach out to me through the following channels:
-- GitHub: [My GitHub Profile](https://www.github.com/BenThere6)
-- Email: benjaminbirdsall@icloud.com
+* GitHub: [My GitHub Profile](https://www.github.com/BenThere6)
+* Email: benjaminbirdsall@icloud.com
 
 I am here to assist you with any questions or feedback you may have. Thank you for your interest!
 

@@ -74,6 +74,7 @@ inquirer
             type: 'input',
             name: 'credits',
             message: 'Enter credits:',
+            default: "The foundational codebase was sourced from the following repository: [insert link here]. This repository served as a starting point for the project, providing valuable insights and inspiration that contributed to the development process. We express our gratitude for the resources made available by the authors of the original codebase."
         },
         {
             type: 'list',

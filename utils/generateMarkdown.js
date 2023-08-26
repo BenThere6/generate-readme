@@ -49,7 +49,7 @@ function renderTests(test) {
 function renderProjectInformation(projInf) {
   var projectInformation = '';
   if (projInf) {
-    projectInformation = `\n## Project Information\n\n${projInf}\n`
+    projectInformation = `## Project Information\n\n${projInf}\n`
   }
   return projectInformation
 }
@@ -65,7 +65,7 @@ function renderCredits(credit) {
 function renderTableOfContents(data) {
   projInf = ''
   if (data.projectInformation) {
-    projInf = '* [Project Information](#project-information)<br>\n'
+    projInf = '* [Project Information](#project-information)<br>'
   }
   installation = ''
   if (data.installation) {
@@ -101,16 +101,17 @@ function generateMarkdown(data) {
 
 # ${data.title} 
   
+## Description
+  
+${data.description}
+
 ## Table of Contents
 
-${tableLinks[0]}* [Description](#description)<br>${tableLinks[1]}
+${tableLinks[0]}${tableLinks[1]}
 * [Usage](#usage)<br>${tableLinks[2]}${tableLinks[3]}
 * [Contact Information](#contact-information)<br>${tableLinks[4]}
 * [License](#license)
 
-## Description
-  
-${data.description}
 ${projectInformation}${installation}
 ## Usage 
 
@@ -130,8 +131,7 @@ ${credits}
 
 [${data.license}](${link})
 
-${summary}
-`;
+${summary}`;
 }
 
 const badges = {

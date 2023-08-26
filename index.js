@@ -30,7 +30,13 @@ inquirer
             type: 'input',
             name: 'projectInformation',
             message: "Enter project information:",
-            default: "This project is developed as part of a school assignment for Rutgers University. The code and documentation are created solely by BenThere6. While external contributions are not expected, this repository serves as a demonstration of my understanding of the concepts covered in the course."
+            default: "This project is developed as part of a school assignment for Rutgers University. The code and documentation are created solely by BenThere6. While external contributions are not expected, this repository serves as a demonstration of my understanding of the concepts covered in the course.",
+            validate: function (input) {
+                if (input.trim() === '') {
+                  return true;
+                }
+                return true;
+              }
         },
         {
             type: 'input',
@@ -74,7 +80,13 @@ inquirer
             type: 'input',
             name: 'credits',
             message: 'Enter credits:',
-            default: "The foundational codebase was sourced from the following repository: [insert link here]. This repository served as a starting point for the project, providing valuable insights and inspiration that contributed to the development process. We express our gratitude for the resources made available by the authors of the original codebase."
+            default: "The foundational codebase was sourced from the following repository: [insert link here]. This repository served as a starting point for the project, providing valuable insights and inspiration that contributed to the development process. We express our gratitude for the resources made available by the authors of the original codebase.",
+            validate: function (input) {
+                if (input.trim() === '') {
+                  return true;
+                }
+                return true;
+              }
         },
         {
             type: 'list',

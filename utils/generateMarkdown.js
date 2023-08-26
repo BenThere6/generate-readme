@@ -46,6 +46,14 @@ function renderTests(test) {
   return tests
 }
 
+function renderProjectInformation(projInf) {
+  var projectInformation = '';
+  if (projInf) {
+    projectInformation = `\n## Project Information\n\n${projInf}\n`
+  }
+  return projectInformation
+}
+
 function renderCredits(credit) {
   var credits = '';
   if (credit) {
@@ -55,6 +63,10 @@ function renderCredits(credit) {
 }
 
 function renderTableOfContents(data) {
+  projInf = ''
+  if (data.projectInformation) {
+    projInf = '* [Project Information](#project-information)<br>\n'
+  }
   installation = ''
   if (data.installation) {
     installation = '\n* [Installation](#installation)<br>'
@@ -71,7 +83,7 @@ function renderTableOfContents(data) {
   if (data.credits) {
     credits = '\n* [Credits](#credits)<br>'
   }
-  return [installation, contributing, tests, credits]
+  return [projInf, installation, contributing, tests, credits]
 }
 
 function generateMarkdown(data) {
@@ -83,6 +95,7 @@ function generateMarkdown(data) {
   var tests = renderTests(data.tests)
   var credits = renderCredits(data.credits)
   var tableLinks = renderTableOfContents(data)
+  var projectInformation = renderProjectInformation(data.projectInformation)
 
   return `${badge}
 
@@ -90,15 +103,15 @@ function generateMarkdown(data) {
   
 ## Table of Contents
 
-* [Description](#description)<br>${tableLinks[0]}
-* [Usage](#usage)<br>${tableLinks[1]}${tableLinks[2]}
-* [Contact Information](#contact-information)<br>${tableLinks[3]}
+${tableLinks[0]}* [Description](#description)<br>${tableLinks[1]}
+* [Usage](#usage)<br>${tableLinks[2]}${tableLinks[3]}
+* [Contact Information](#contact-information)<br>${tableLinks[4]}
 * [License](#license)
 
 ## Description
   
 ${data.description}
-${installation}
+${projectInformation}${installation}
 ## Usage 
 
 ${data.usage}

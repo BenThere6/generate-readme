@@ -1,4 +1,3 @@
-// TODO: Include packages needed for this application
 const generateMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
@@ -26,6 +25,12 @@ inquirer
                 }
                 return true;
               }
+        },
+        {
+            type: 'input',
+            name: 'projectInformation',
+            message: "Enter project information:",
+            default: "This project is developed as part of a school assignment for Rutgers University. The code and documentation are created solely by BenThere6. While external contributions are not expected, this repository serves as a demonstration of my understanding of the concepts covered in the course."
         },
         {
             type: 'input',
@@ -90,7 +95,7 @@ inquirer
     .then(answers => {
         const markdown = generateMarkdown.generateMarkdown(answers);
 
-        fs.writeFile('README.md', markdown, (err) => {
+        fs.writeFile('./utils/README.md', markdown, (err) => {
             if (err) {
                 console.error('Error writing to file:', err);
             } else {

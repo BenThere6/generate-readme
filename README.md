@@ -2,18 +2,17 @@
 
 # README Generator 
   
+## Description
+  
+This script automates the generation of a professional README.md file, including sections like Title, Table of Contents, Description, Installation, Usage, Contributions, Testing, Contact Info, Credits, and Licensing. Guided by prompts, users can swiftly create structured and informative READMEs, enhancing their project documentation effortlessly. The resulting README is promptly saved, streamlining the process of delivering a polished and comprehensive project presentation.
+
 ## Table of Contents
 
 * [Project Information](#project-information)<br>
-* [Description](#description)<br>
 * [Installation](#installation)<br>
 * [Usage](#usage)<br>
 * [Contact Information](#contact-information)<br>
 * [License](#license)
-
-## Description
-  
-This script automates the generation of a professional README.md file, including sections like Title, Table of Contents, Description, Installation, Usage, Contributions, Testing, Contact Info, Credits, and Licensing. Guided by prompts, users can swiftly create structured and informative READMEs, enhancing their project documentation effortlessly. The resulting README is promptly saved, streamlining the process of delivering a polished and comprehensive project presentation.
 
 ## Project Information
 

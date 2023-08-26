@@ -48,42 +48,54 @@ function renderTests(test) {
 
 function renderProjectInformation(projInf) {
   var projectInformation = '';
-  if (projInf) {
-    projectInformation = `## Project Information\n\n${projInf}\n`
+  if (projInf && projInf != 'skip') {
+    projectInformation = `\n## Project Information\n\n${projInf}\n`
   }
   return projectInformation
 }
 
 function renderCredits(credit) {
   var credits = '';
-  if (credit) {
+  if (credit && credit != 'skip') {
     credits = `\n## Credits\n\n${credit}\n`
   }
   return credits
 }
 
-function renderTableOfContents(data) {
-  projInf = ''
-  if (data.projectInformation) {
-    projInf = '* [Project Information](#project-information)<br>'
+function renderUsage(use) {
+  var usage = '';
+  if (use && use != 'skip') {
+    usage = `\n## Usage\n\n${use}\n\n![Screenshot]()\n`
   }
-  installation = ''
+  return usage
+}
+
+function renderTableOfContents(data) {
+  var projInf = ''
+  if (data.projectInformation && data.projectInformation != 'skip') {
+    projInf = '\n* [Project Information](#project-information)<br>'
+  }
+  var installation = ''
   if (data.installation) {
     installation = '\n* [Installation](#installation)<br>'
   }
-  contributing = ''
+  var usage = ''
+  if (data.usage && data.usage != 'skip') {
+    usage = '\n* [Usage](#usage)<br>'
+  }
+  var contributing = ''
   if (data.contributing) {
     contributing = '\n* [Contributing](#contributing)<br>'
   }
-  tests = ''
+  var tests = ''
   if (data.tests) {
     tests = '\n* [Tests](#tests)<br>'
   }
-  credits = ''
-  if (data.credits) {
+  var credits = ''
+  if (data.credits && data.credits != 'skip') {
     credits = '\n* [Credits](#credits)<br>'
   }
-  return [projInf, installation, contributing, tests, credits]
+  return [projInf, installation, usage, contributing, tests, credits]
 }
 
 function generateMarkdown(data) {
@@ -96,6 +108,7 @@ function generateMarkdown(data) {
   var credits = renderCredits(data.credits)
   var tableLinks = renderTableOfContents(data)
   var projectInformation = renderProjectInformation(data.projectInformation)
+  var usage = renderUsage(data.usage)
 
   return `${badge}
 
@@ -106,19 +119,10 @@ function generateMarkdown(data) {
 ${data.description}
 
 ## Table of Contents
-
-${tableLinks[0]}${tableLinks[1]}
-* [Usage](#usage)<br>${tableLinks[2]}${tableLinks[3]}
-* [Contact Information](#contact-information)<br>${tableLinks[4]}
+${tableLinks[0]}${tableLinks[1]}${tableLinks[2]}${tableLinks[3]}${tableLinks[4]}
+* [Contact Information](#contact-information)<br>${tableLinks[5]}
 * [License](#license)
-
-${projectInformation}${installation}
-## Usage 
-
-${data.usage}
-
-![Screenshot]()
-${contributing}${tests}
+${projectInformation}${installation}${usage}${contributing}${tests}
 ## Contact Information
 
 For any further inquiries, please feel free to reach out to me through the following channels:

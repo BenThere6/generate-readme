@@ -16,7 +16,7 @@ This script automates the generation of a professional README.md file, including
 
 ## Project Information
 
-This project is developed as part of a school assignment for Rutgers University. The code and documentation are created solely by BenThere6. While external contributions are not expected, this repository serves as a demonstration of my understanding of the concepts covered in the course.
+This project is developed as part of a school assignment for Rutgers University. While external contributions are not expected, this repository serves as a demonstration of my understanding of the concepts covered in the course.
 
 ## Installation
 
@@ -35,6 +35,10 @@ For any further inquiries, please feel free to reach out to me through the follo
 * Email: benjaminbirdsall@icloud.com
 
 I am here to assist you with any questions or feedback you may have. Thank you for your interest!
+
+## Credits
+
+The foundational codebase was sourced from the following repository: https://github.com/coding-boot-camp/potential-enigma. This repository served as a starting point for the project, providing valuable insights and inspiration that contributed to the development process. We express our gratitude for the resources made available by the authors of the original codebase.
 
 ## License 
 

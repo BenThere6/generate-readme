@@ -33,17 +33,17 @@ inquirer
             default: "This project is developed as part of a school assignment for Rutgers University. The code and documentation are created solely by BenThere6. While external contributions are not expected, this repository serves as a demonstration of my understanding of the concepts covered in the course.",
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'installation',
             message: "What are the instructions for installation?",
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'usage',
             message: "What are the instructions for use?",
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'contributing',
             message: "What are the instructions for contributing?",
         },

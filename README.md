@@ -26,7 +26,7 @@ To effortlessly set up the required components, enter the command 'npm i' in the
 
 Upon successfully installing the packages, execute the command 'node index' within your terminal environment. This initiates the application and prompts a guided workflow that ensures a structured and intuitive user experience. By adhering to these prompts, you will efficiently navigate through the necessary steps, optimizing the utilization of the application's features while maintaining a professional and organized development process.
 
-![Screenshot]()
+![Screenshot](./images/Screenshot%202023-08-30%20at%203.55.35%20PM.png)
 
 ## Contact Information
 

@@ -30,7 +30,7 @@ inquirer
             type: 'input',
             name: 'projectInformation',
             message: "Enter project information (Enter 'skip' to skip):",
-            default: "This project is developed as part of a school assignment for Rutgers University. The code and documentation are created solely by BenThere6. While external contributions are not expected, this repository serves as a demonstration of my understanding of the concepts covered in the course.",
+            default: "This project is developed as part of a school assignment for Rutgers University. While external contributions are not expected, this repository serves as a demonstration of my understanding of the concepts covered in the course.",
         },
         {
             type: 'editor',

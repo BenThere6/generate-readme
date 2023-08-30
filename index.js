@@ -96,6 +96,6 @@ inquirer
             } else {
                 console.log('File write operation complete.');
             }
-            });
+        });
     })
 

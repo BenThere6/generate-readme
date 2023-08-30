@@ -90,7 +90,7 @@ inquirer
     .then(answers => {
         const markdown = generateMarkdown.generateMarkdown(answers);
 
-        fs.writeFile('./utils/README.md', markdown, (err) => {
+        fs.writeFile('./dist/README.md', markdown, (err) => {
             if (err) {
                 console.error('Error writing to file:', err);
             } else {

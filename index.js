@@ -1,4 +1,4 @@
-const generateMarkdown = require('./dist/generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
 console.log('Follow the prompts below to generate your REAME.md file. \nPress \'Enter\' to skip a prompt, unless specified to type \'skip\'')

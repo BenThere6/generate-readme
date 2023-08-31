@@ -28,6 +28,8 @@ Upon successfully installing the packages, execute the command 'node index' with
 
 ![Screenshot](./images/Screenshot%202023-08-30%20at%203.55.35%20PM.png)
 
+[Link to instruction video](https://drive.google.com/file/d/1JmzLyLLo2Ab8t6xMk_YJb3iuA-oTAoob/view)
+
 ## Contact Information
 
 For any further inquiries, please feel free to reach out to me through the following channels:

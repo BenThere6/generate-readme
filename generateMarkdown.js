@@ -163,15 +163,15 @@ const links = {
 }
 
 const summaries = {
-  'MIT License':'The MIT License is a permissive open-source license that allows others to use, modify, and distribute your code for both commercial and non-commercial purposes. It requires that the original license notice and copyright notice are included in any redistributions.',
-  'GNU General Public License v2':'The GPL-2.0 is a copyleft license that requires derivative works to be licensed under the GPL and mandates that the source code of modifications is made available. It focuses on ensuring that any modifications or derived works also remain open source.',
-  'GNU General Public License v3':'The GPL-3.0 extends the principles of the GPL-2.0 by addressing issues related to software patents and digital rights management (DRM). Like its predecessor, it enforces open-source distribution and sharing of modifications.',
-  'Apache License 2.0':'The Apache 2.0 License is a permissive open-source license that grants users the right to use, modify, and distribute your code under certain conditions. It includes an explicit grant of patent rights from contributors, providing more protection against patent litigation.',
-  '3-Clause BSD License':"The 3-Clause BSD License allows others to use, modify, and distribute your code under minimal restrictions. It requires retention of your copyright notice, disclaims warranties, and prevents the use of contributors' names for endorsement.",
-  '2-Clause BSD License':'Similar to the 3-Clause BSD License, the 2-Clause BSD License permits use, modification, and distribution with fewer restrictions. It omits the requirement to retain the copyright notice in derived works.',
-  'Mozilla Public License 2.0':"The MPL-2.0 is a permissive license with some copyleft provisions. It allows modifications and distribution of code under the same MPL-2.0 license. It's designed to balance open source practices with the needs of commercial software development.",
-  'ISC License':"The ISC License is a simple permissive license that allows others to use, modify, and distribute your code with minimal requirements. It's similar to the MIT License but with slightly different wording.",
-  'GNU Affero General Public License':'The AGPL is an extension of the GPL designed for network-based distribution, such as web services. It requires modified versions of the software used in a network to be made available under the AGPL, ensuring that users of the service also have access to the source code.'
+  'MIT License':"This code's MIT License allows you to freely use, modify, and share it for any purpose. Please include the original license and copyright notices when sharing.",
+  'GNU General Public License v2':'The GPL-2.0 is a copyleft license, demanding that derivative works adopt the GPL and necessitating the publication of modified source code. Its primary aim is to uphold open-source principles for all modifications and derived creations.',
+  'GNU General Public License v3':'The GPL-3.0 builds upon the GPL-2.0 by tackling software patent and digital rights management (DRM) concerns, while still upholding open-source distribution and modification-sharing principles.',
+  'Apache License 2.0':'The Apache 2.0 License, which governs this code, is an open-source license that gives you the freedom to use, modify, and share the code under certain conditions. Additionally, it provides contributors with patent rights protection, reducing the risk of patent disputes.',
+  '3-Clause BSD License':"The 3-Clause BSD License permits code use, modification, and sharing with minimal constraints. It requires keeping the copyright notice, disclaims warranties, and prohibits endorsing contributors' names.",
+  '2-Clause BSD License':'The 2-Clause BSD License permits code use, modification, and sharing with fewer constraints, without requiring the retention of the copyright notice in derived works.',
+  'Mozilla Public License 2.0':"The MPL-2.0 is a balanced license with some copyleft aspects. It permits code modification and distribution under the same MPL-2.0 license, aligning open source principles with commercial software development needs.",
+  'ISC License':"The ISC License is a straightforward permissive license, enabling code usage, modification, and distribution with minimal obligations. It closely resembles the MIT License, with some slight wording differences.",
+  'GNU Affero General Public License':'The AGPL, an extension of the GPL, is tailored for network-based distribution, like web services. It mandates that modified versions of the software used in a network must be shared under the AGPL. This ensures that users of the service can access the source code.'
 }
 
 module.exports = {
